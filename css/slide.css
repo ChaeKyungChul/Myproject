@@ -1,0 +1,25 @@
+
+#slidermap{
+   width: 1950px;
+    height: 450px;
+    overflow: hidden;
+}
+.sliderWrap{
+    display:flex;
+}
+.slider{ 
+    position: relative;
+}
+.slider img{
+    display: block;
+}
+.slider span{
+    position : absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+
+}

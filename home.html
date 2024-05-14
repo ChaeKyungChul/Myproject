@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 쇼핑몰</title>
+    <link rel="icon" type="image/x-icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css"> <!-- 스타일 시트 링크 -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/db.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <div class="header-center">
+            <h1>Family Flash</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">상품후기</a></li>
+                    <li><a href="#">Best 상품</a></li>
+                    <li><a href="#">초특가 상품</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">문의</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                </ul>
+            </nav>
+       
+        <!--로그인폼-->
+        <form class="login-form">
+            <a href="login.html" class="loginbox">
+                <h2 class="loginbox">Family Flash 로그인</h2></a>
+              <a href="#"> <p class="userid1">ID/비밀번호 찾기 </p></a>
+             
+              <a href="page.html"> <p class="userid1">회원가입 </p></a>   
+        </form>
+    </div>
+    </header>
+    <div class="social">
+        <a href="#" class="instagram"><i class="ri-instagram-line"></i></a>
+        <a href="#" class="youtube"><i class="ri-youtube-line"></i></a>
+        <a href="#" class="facebook"><i class="ri-facebook-circle-line"></i></a>
+        <a href="#" class="kakaotalk"><i class="ri-kakao-talk-line"></i></a>
+     </div>
+    <!--메인 슬라이더-->
+     <div id = "slidermap">
+        <div class ="sliderWrap">
+            <div class="slider">
+                <img src="image/과일사진1.jpg" alt="1">
+            </div>
+            <div class="slider">
+                <img src="image/과일사진2.jpg" alt="2">
+            </div>
+            <div class="slider">
+                <img src="image/과일사진3.jpg" alt="3">
+            </div>
+            <div class="slider">
+                <img src="image/과일사진4.jpg" alt="4">
+            </div>
+             
+         </div>
+      </div>
+          
+
+      <h1 class="section-title mt-5 pt-5 text-center">Best</h1>
+            <p class="text-center mb-5">가장 많이 팔린 베스트 상품들을 보세요.</p>
+            <div class="container">
+              <ul class="nav border p-2 my-5 sort">
+                  <li class="border-right">
+                     <a href="#" class="font-weight-bold py-2 px-5">전체</a>
+                  </li>
+                  <li class="border-right"> 
+                     <a href="#" class="px-5 py-2 ">신상품순</a>
+                  </li>   
+                  <li class="border-right"> 
+                     <a href="#" class="px-5 py-2 ">인기상품순</a>
+                  </li>
+                  <li class="border-right">    
+                     <a href="#" class="px-5 py-2 ">베스트판매량순</a>
+                  </li>
+              </ul>  
+    <main>
+        <!-- <section class="sidebar">
+            <div class="eventbox">
+            <h2>할인 목록</h2>
+            <ul>
+                <li>20% 할인 이벤트 진행 중!</li>
+                <li>신규 가입시 ₩5,000 할인 쿠폰 제공</li>
+            </ul>
+            <hr>
+            <h2>이벤트</h2>
+            <p>이번 주 특별 이벤트: 모든 제품 무료 배송!</p>
+        </div>
+        </section> -->
+
+ <!--리스트-->
+        <section id="list" class="list">
+            
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="image/과일1.jpg" class="card-img-top" alt="nothing">
+                        </a>
+                        <a href="#" class="card-body ">
+                            <h5 class="mt-4 pb-2 border-bottom  ">딸기&아이스크림
+                                <span class="badge badge-danger">NEW</span>
+                            </h5>
+                            <p class="desc">센스있는 딸기</p>
+                            <p class="price">
+                                <span class="or">100,000원</span>
+                                <span>80,000원</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="image/과일2.jpg" class="card-img-top" alt="nothing">
+                        </a>
+                        <a href="#" class="card-body">
+                            <h5 class="mt-4 pb-2 border-bottom">딸기&딸기
+                                <span class="badge badge-danger">NEW</span>
+                            </h5>
+                            <p class="desc">센스있는 딸기</p>
+                            <p class="price">
+                                <span class="or">100,000원</span>
+                                <span>80,000원</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="image/과일3.jpg" class="card-img-top" alt="nothing">
+                        </a>
+                        <a href="#" class="card-body">
+                            <h5 class="mt-4 pb-2 border-bottom">블루베리
+                                <span class="badge badge-danger">NEW</span>
+                            </h5>
+                            <p class="desc">센스있는 딸기</p>
+                            <p class="price">
+                                <span class="or">100,000원</span>
+                                <span>80,000원</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="image/과일4.jpg" class="card-img-top" alt="nothing">
+                        </a>
+                        <a href="#" class="card-body">
+                            <h5 class="mt-4 pb-2 border-bottom">토마토&레몬
+                                <span class="badge badge-danger">NEW</span>
+                            </h5>
+                            <p class="desc">센스있는 딸기</p>
+                            <p class="price">
+                                <span class="or">100,000원</span>
+                                <span>80,000원</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="image/과일5.jpg" class="card-img-top" alt="nothing">
+                        </a>
+                        <a href="#" class="card-body">
+                            <h5 class="mt-4 pb-2 border-bottom">호두
+                                <span class="badge badge-danger">NEW</span>
+                            </h5>
+                            <p class="desc">센스있는 딸기</p>
+                            <p class="price">
+                                <span class="or">100,000원</span>
+                                <span>80,000원</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="image/과일6.jpg" class="card-img-top" alt="nothing">
+                        </a>
+                        <a href="#" class="card-body">
+                              <h5 class="mt-4 pb-2 border-bottom">빵 
+                                <span class="badge badge-danger">NEW</span>
+                            </h5>
+                            <p class="desc">센스있는 딸기</p>
+                            <p class="price">
+                                <span class="or">100,000원</span>
+                                <span>80,000원</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 추가 카드를 필요한 만큼 반복 -->
+            </div>
+             </div>
+            </div>
+        
+            <div class="pgbox">
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#" class="page-link"><i class="ri-arrow-left-double-line"></i></a></li>
+                    <li class="page-item disabled"><a href="#" class="page-link"><i class="ri-arrow-left-s-line"></i></a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="ri-arrow-right-s-line"></i></a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="ri-arrow-right-double-line"></i></a></li>
+                </ul>
+            </div>
+        
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 나의 쇼핑몰. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>

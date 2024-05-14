@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" class="">
+    <link rel="stylesheet" href="" class="">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    
+    <div class="signuppopup">
+        <h4 class="fw-bold mb-5">회원가입</h4>
+        <p class="text-danger">* 표시가 되어 있는 부분은 필수 항목입니다.</p>
+        <form name="joinForm" id="joinForm" method="post">
+          <div class="mb-3 me-4 row">
+             
+          </div>
+          <div class="linecenter">
+             <label for="username" class="form-label"></label>
+             <div class="col-6">
+                <label for="username" class="form-label text-end"></label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="아이디">
+                  <button type="button" class="btn btn-primary" id="checkid">중복확인</button>
+                <input type="hidden" id="cid">
+
+ 
+          <div class="">
+             <label for="password" class="form-label"></label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="비밀번호">
+             </div>
+          
+          <div class="">
+             <label for="repassword" class="form-label"></label>           
+                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="비밀번호확인">            
+          </div>
+          <div class="">
+             <label for="email" class="form-label"></label>
+                 <input type="email" class="form-control" id="useremail" name="useremail" placeholder="이메일주소">
+                 <button type="button" class="btn btn-primary" id="checkemail">중복확인</button>
+                 <input type="hidden" id="cemail">
+                </div>
+          </div>
+          </div>
+          <div class="line">
+          <label for="uname" class="form-label">이름</label> 
+                <input type="text" class="form-control" name="uname" id="uname" placeholder="이름*">
+            
+         
+           <label for="tel" class="form-label col-2">전화번호</label>
+                <input type="tel" class="form-control" id="usertel" name="usertel" placeholder="전화번호">
+          </div>
+          
+            <label for="zip" id="" class="form-label col-2">우편번호</label>
+            <input type="number" name="zipcode" id="zipcode" 
+                  class="form-control2" placeholder="우편번호" readonly>   
+              <button type="button" onclick="dPostcode()"  id="zip"  class="btn btn-secondary mt-1">우편번호찾기</button>
+
+          <div class="mb-3 me-4 row">
+            <label for="zip" class="form-label">주소  </label>
+              <input type="text" name="addr1" id="addr1"
+                   class="form-control3" placeholder="주소" readonly>
+          </div>
+          <label for="zip" class="form-label">상세</label>
+            <label for="zip" class="text-right mr-2 col-5 bg-white"></label>
+            <input type="text" name="addr2" id="addr2"
+                 class="form-control3" placeholder="상세주소">
+         
+          <div class="col-12 d-flex mb-4">
+            <label for="file" class="text-right mr-2 col-5">사진</label>
+            <input type="file" name="file" id="file"
+                 class="form-control" placeholder="사진업로드">
+          </div>
+        </div>
+          <div class="text-center">
+             <button type="button" class="reset btn btn-danger">취소</button>
+             <button type="submit" class="btn btn-success">회원가입</a></button>
+          </div>
+        </form>
+     </div>
+</body>
+</html>
